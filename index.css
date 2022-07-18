@@ -13,25 +13,25 @@
   }
 
   b {
-    @apply text-blue-600;
+    @apply text-cyan-700;
   }
 
   p {
-    @apply mt-2 mb-1;
+    @apply mt-2 mb-1 text-justify;
   }
   ul {
     @apply pl-4;
   }
   li {
-    @apply list-disc m-1;
+    @apply list-disc m-1 text-justify;
   }
 
   a {
-    @apply text-blue-600 underline;
+    @apply font-bold text-blue-600 underline hover:text-amber-100;
   }
 
   .areaDiv {
-    @apply m-4 pt-4;
+    @apply lg:m-4 m-2 py-2 lg:py-4;
   }
 
 }
