@@ -8,6 +8,10 @@
     @apply text-xl font-bold mb-2 mt-2;
   }
 
+  h2 {
+    @apply text-lg font-bold;
+  }
+
   b {
     @apply text-blue-600;
   }
