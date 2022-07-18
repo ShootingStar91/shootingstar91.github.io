@@ -458,13 +458,8 @@ a {
 }
 
 .areaDiv {
+  margin: 1rem;
   padding-top: 1rem;
-}
-
-@media (min-width: 768px) {
-  .areaDiv {
-    margin: 1rem;
-  }
 }
 
 *, ::before, ::after {
@@ -620,12 +615,20 @@ a {
   float: right;
 }
 
-.m-2 {
-  margin: 0.5rem;
+.m-8 {
+  margin: 2rem;
 }
 
 .flex {
   display: flex;
+}
+
+.min-h-\[210px\] {
+  min-height: 210px;
+}
+
+.min-h-\[200px\] {
+  min-height: 200px;
 }
 
 .w-32 {
@@ -664,10 +667,6 @@ a {
   padding: 1rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -682,18 +681,4 @@ a {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-@media (min-width: 768px) {
-  .md\:m-6 {
-    margin: 1.5rem;
-  }
-
-  .md\:min-h-\[200px\] {
-    min-height: 200px;
-  }
-
-  .md\:p-4 {
-    padding: 1rem;
-  }
 }
