@@ -9,7 +9,7 @@
   }
 
   h2 {
-    @apply text-lg font-bold;
+    @apply text-md font-bold underline;
   }
 
   b {
