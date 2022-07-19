@@ -620,10 +620,6 @@ a:hover {
   --tw-backdrop-sepia:  ;
 }
 
-.relative {
-  position: relative;
-}
-
 .m-2 {
   margin: 0.5rem;
 }
@@ -631,10 +627,6 @@ a:hover {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .flex {
@@ -657,6 +649,10 @@ a:hover {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-2xl {
@@ -704,25 +700,8 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
-  .lg\:left-\[5\%\] {
-    left: 5%;
-  }
-
-  .lg\:left-16 {
-    left: 4rem;
-  }
-
-  .lg\:left-32 {
-    left: 8rem;
-  }
-
   .lg\:m-6 {
     margin: 1.5rem;
-  }
-
-  .lg\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .lg\:ml-4 {
