@@ -5,11 +5,11 @@
 @layer base {
 
   h1 {
-    @apply text-xl font-bold mb-2 mt-2;
+    @apply text-xl font-bold mb-2;
   }
 
   h2 {
-    @apply text-md font-bold underline;
+    @apply font-bold;
   }
 
   b {
@@ -17,8 +17,9 @@
   }
 
   p {
-    @apply mt-2 mb-1 text-justify;
+    @apply mt-2 text-justify;
   }
+  
   ul {
     @apply pl-4;
   }
@@ -31,7 +32,7 @@
   }
 
   .areaDiv {
-    @apply lg:m-4 m-2 py-2 lg:py-4;
+    @apply lg:m-4 m-2 py-2;
   }
 
 }

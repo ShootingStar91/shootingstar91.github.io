@@ -419,15 +419,12 @@ video {
 
 h1 {
   margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
   font-weight: 700;
 }
 
@@ -438,7 +435,6 @@ b {
 
 p {
   margin-top: 0.5rem;
-  margin-bottom: 0.25rem;
   text-align: justify;
 }
 
@@ -474,8 +470,6 @@ a:hover {
 @media (min-width: 1024px) {
   .areaDiv {
     margin: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 }
 
@@ -659,44 +653,14 @@ a:hover {
   border-radius: 1rem;
 }
 
-.bg-zinc-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
-}
-
-.bg-zinc-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
-}
-
-.bg-zinc-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(113 113 122 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
 .bg-stone-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(168 162 158 / var(--tw-bg-opacity));
 }
 
-.bg-stone-500 {
+.bg-zinc-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(120 113 108 / var(--tw-bg-opacity));
-}
-
-.bg-stone-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(214 211 209 / var(--tw-bg-opacity));
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -740,5 +704,9 @@ a:hover {
 
   .lg\:p-4 {
     padding: 1rem;
+  }
+
+  .lg\:p-2 {
+    padding: 0.5rem;
   }
 }
