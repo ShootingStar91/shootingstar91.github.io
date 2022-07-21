@@ -435,7 +435,6 @@ b {
 
 p {
   margin-top: 0.5rem;
-  text-align: justify;
 }
 
 ul {
@@ -445,7 +444,6 @@ ul {
 li {
   margin: 0.25rem;
   list-style-type: disc;
-  text-align: justify;
 }
 
 a {
@@ -458,7 +456,7 @@ a {
 
 a:hover {
   --tw-text-opacity: 1;
-  color: rgb(254 243 199 / var(--tw-text-opacity));
+  color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 .areaDiv {

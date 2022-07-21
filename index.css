@@ -17,18 +17,18 @@
   }
 
   p {
-    @apply mt-2 text-justify;
+    @apply mt-2;
   }
-  
+
   ul {
     @apply pl-4;
   }
   li {
-    @apply list-disc m-1 text-justify;
+    @apply list-disc m-1;
   }
 
   a {
-    @apply font-bold text-blue-600 underline hover:text-amber-100;
+    @apply font-bold text-blue-600 underline hover:text-amber-500;
   }
 
   .areaDiv {
