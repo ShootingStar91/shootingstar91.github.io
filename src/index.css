@@ -9,3 +9,15 @@ h1 {
 p {
   @apply py-2
 }
+
+a {
+  @apply text-blue-600 underline
+}
+
+ul {
+  @apply pl-4
+}
+
+li {
+  @apply list-disc pl-2
+}
