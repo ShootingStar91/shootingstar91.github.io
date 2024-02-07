@@ -1,11 +1,12 @@
 export const tmcCliRustContent = {
   name: 'Tmc-cli-rust', content: {
     title: 'tmc-cli-rust',
-    description: <div><p>Osana kandiopintojani ohjelmistotuotantoprojekti-kurssilla rakensin 7-henkisen tiimin kanssa Rust-ohjelmointikielellä komentorivisovelluksen. Sovelluksen avulla opiskelijat voivat tarkistaa ja palauttaa ohjelmointitehtäviä yliopiston TestMyCode-järjestelmän avulla.</p>
-      <p>Toteutin projektiin paljon keskeisiä ominaisuuksia ja esimerkiksi suunnittelin koodin arkkitehtuurin siten, että se oli hyvin testattavissa sekä integraatio- että yksikkötesteillä. En ollut aiemmin käyttänyt Rustia, mutta projektia varten opettelin sitä.</p>
-      <p>Sovellus on edelleen käytössä yliopistolla.</p>
-      <p>Repositorio: <a href="https://github.com/rage/tmc-cli-rust">https://github.com/rage/tmc-cli-rust</a></p></div>,
-    technologies: 'Rust,Unit testing,Integration testing'.split(','),
+    description: <div><p>As a part of my Bachelor studies, with a team of 7 students, I built a command line interface in Rust.
+      It allows students to test and submit their programming exercises using the TestMyCode system of the University.</p>
+    <p>I implemented many core features of the application and planned the basic architecture of the code, to allow integration and unit testing. I did not know Rust before, but I learned it for this project.</p>
+    <p>The application is still used.</p>
+    <p>Repository: <a href="https://github.com/rage/tmc-cli-rust">https://github.com/rage/tmc-cli-rust</a></p></div>,
+    technologies: 'Rust,Git,GitHub Actions'.split(','),
     images: ['tmc1.png', 'tmc2.png', 'tmc3.png']
   }
 }

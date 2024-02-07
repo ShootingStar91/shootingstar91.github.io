@@ -22,7 +22,7 @@ const ShowPage = ({ name }) => {
         <b></b>
         {exampleTasks && <div className="min-w-[50%]">{exampleTasks}</div>}
         <div className="pl-2 sm:pl-4">
-          <b>Käytetyt teknologiat:</b>
+          <b>Technologies used:</b>
           <div className="flex flex-row gap-2 text-sm flex-wrap my-2 justify-around">
             {technologies.map(t => <div key={t} className="bg-sky-200 p-1">{t}</div>)}
           </div>
@@ -57,10 +57,10 @@ function App() {
         </div>
         <div className="p-2">
           <p>
-            Olen 32-vuotias fullstack-kehittäjä ja tietojenkäsittelytieteen maisteriopiskelija. Opintoni ovat loppuvaiheessa ja olen tällä hetkellä töissä Helsingin yliopistolla, mutta etsin seuraavaa työpaikkaa.
+            I am a software developer currently working at University of Helsinki, but looking for my next job.
           </p>
           <p>
-            Ota yhteyttä sähköpostilla: ttu91@hotmail.com</p>
+            Contant me by email: ttu91@hotmail.com</p>
         </div>
         <div className="flex flex-col gap-4 pt-2 flex-row sm:flex-row"><h2 className="font-bold my-auto">Projektit</h2>
           <div className="flex flex-row gap-4">
