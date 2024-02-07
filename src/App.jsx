@@ -28,7 +28,7 @@ const ShowPage = ({ name }) => {
           </div>
         </div>
       </div>
-      {images && images.map(image => <img key={image} className="py-2" src={`/assets/${image}`}></img>)}
+      {images && images.map(image => <img key={image} className="py-2" src={`${image}`}></img>)}
     </div>
   )
 }
