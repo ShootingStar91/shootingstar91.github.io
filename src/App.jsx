@@ -33,7 +33,6 @@ const ShowPage = ({ name }) => {
   )
 }
 
-const buttonStyle2 = 'p-2 my-auto rounded-t-md font-bold hover:bg-stone-300 hover:transition hover:ease-out duration-700 hover:duration-100 active:bg-stone-700 active:duration-0 select-none'
 const buttonStyle = 'p-2 my-auto rounded-t-md font-bold select-none mb-0'
 
 function App() {
@@ -43,7 +42,7 @@ function App() {
   return (
     <>
       <div className="max-w-screen-lg mx-auto pb-4 break-words">
-        <div className="bg-gradient-to-br from-sky-500 to-sky-300 flex flex-wrap justify-between rounded-b-md">
+        <div className="bg-gradient-to-br from-stone-500 to-stone-100 via-stone-200 flex flex-wrap justify-between rounded-b-md transition">
           <div className="my-auto"><h1 className="p-4">Arttu Kangas - Portfolio</h1></div>
           <div className="my-auto p-4">
             <ul>
@@ -55,9 +54,10 @@ function App() {
               </li>
             </ul>
           </div>
-        </div>          <div>
+        </div>
+        <div className="p-2">
           <p>
-            Olen 32-vuotias fullstack-kehittäjä ja tietojenkäsittelytieteen maisteriopiskelija. Opintoni ovat loppuvaiheessa ja olen tällä hetkellä töissä Helsingin Yliopistolla, mutta etsin uutta työpaikkaa.
+            Olen 32-vuotias fullstack-kehittäjä ja tietojenkäsittelytieteen maisteriopiskelija. Opintoni ovat loppuvaiheessa ja olen tällä hetkellä töissä Helsingin yliopistolla, mutta etsin seuraavaa työpaikkaa.
           </p>
           <p>
             Ota yhteyttä sähköpostilla: ttu91@hotmail.com</p>
