@@ -6,6 +6,10 @@ h1 {
   @apply font-bold text-2xl
 }
 
+h2 {
+  @apply font-bold text-xl
+}
+
 p {
   @apply py-2
 }
@@ -20,4 +24,8 @@ ul {
 
 li {
   @apply list-disc pl-2
+}
+
+hr {
+  @apply h-px my-2 bg-gray-200 border-0 dark:bg-gray-700
 }

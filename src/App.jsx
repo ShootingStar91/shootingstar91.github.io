@@ -5,21 +5,23 @@ const ShowPage = ({ name }) => {
     {
       name: 'oodikone', content: {
         title: 'Oodikone',
-        description: <div>Oodikone on <a href="https://toska.dev">Toska-sovelluskehitystiimin</a> web-sovellus, joka tuo opiskelijadataa Helsingin yliopiston henkilökunnan luettavaksi eri muodoissa.</div>,
+        description: <div><p>Oodikone on <a href="https://toska.dev">Toska-devaajatiimin</a> web-sovellus, joka tuo opiskelijadataa Helsingin yliopiston henkilökunnan luettavaksi eri muodoissa.</p>
+          <p>Oodikoneen repositorio: <a href="https://github.com/UniversityOfHelsinkiCS/oodikone">https://github.com/UniversityOfHelsinkiCS/oodikone</a></p></div>,
         exampleTasks: <div>
           <p>
-          Toteutin uusia ominaisuuksia, jotka suunnittelin yhteistyössä asiakkaiden kanssa. Toteutin ominaisuudet itsenäisesti tai tiimityönä tietokantatasolta käyttöliittymään asti. Tein myös lukuisia teknologisia
-          parannuksia sovellukseen ja sen käyttämiin mikropalveluihin.
+            Toteutin sovellukseen uusia ominaisuuksia, jotka suunnittelin yhteistyössä asiakkaiden kanssa. Toteutin ominaisuudet itsenäisesti tai tiimityönä tietokantatasolta käyttöliittymään asti. Tein myös lukuisia teknologisia
+            parannuksia sovellukseen ja sen käyttämiin mikropalveluihin.
           </p>
+          <p><b>Tein esimerkiksi:</b></p>
           <ul>
             <li>
-            Työkalu, jolla
-           yliopiston henkilökunta voi tarkastaa opiskelijoiden suoritettuja kursseja
+              Työkalun, jolla
+              yliopiston henkilökunta voi tarkastaa opiskelijoiden suoritettuja kursseja
             </li>
-            <li>Näkymä, joka näyttää kielikeskuksen kurssien suoritus- ja yritysmääriä väritetyssä taulukossa.
+            <li>Näkymän, joka näyttää kielikeskuksen kurssien suoritus- ja yritysmääriä väritetyssä taulukossa.
             </li>
             <li>
-          Muutin raskaat data-laskennat worker-threadeihin jobeiksi, joiden ajaminen on keskitetysti hallittu Redisin kautta käyttäen BullMQ-kirjastoa. Optimoin myös laskenta-ajan noin 75% pienemmäksi.
+              Muutin raskaat data-laskennat worker-threadeihin jobeiksi, joiden ajaminen on keskitetysti hallittu Redisin kautta käyttäen BullMQ-kirjastoa. Optimoin myös laskenta-ajan noin 75% pienemmäksi.
             </li>
             <li>
               Sekä selvitin ja korjasin lukuisia bugeja ja ongelmia, refaktoroin koodia paremmaksi, ja paransin sovelluksen testausta.
@@ -40,12 +42,14 @@ const ShowPage = ({ name }) => {
     <div>
       <h1 className="py-2">{title}</h1>
       <p className="">{description}</p>
+      <hr />
       <div className="flex flex-row gap-2 py-2 pt-4">
+        <b></b>
         <div className="min-w-[50%]">{exampleTasks}</div>
         <div className="pl-2 sm:pl-4">
           <b>Used technologies:</b>
-          <div className="flex flex-row gap-2 text-sm flex-wrap">
-            {technologies.map(t => <div key={t}>{t}</div>)}
+          <div className="flex flex-row gap-2 text-sm flex-wrap mt-2 justify-around">
+            {technologies.map(t => <div key={t} className="bg-sky-200 p-1">{t}</div>)}
           </div>
         </div>
       </div>
@@ -81,9 +85,21 @@ function App() {
 
   return (
     <>
-      <div className="max-w-screen-lg mx-auto p-2">
-        <h1 className="pt-4">Arttu Kangas - Portfolio</h1>
-        <div className="flex flex-col gap-4 pt-2 flex-row sm:flex-row"><h1 className="font-bold">Projektit:</h1>
+      <div className="max-w-screen-lg mx-auto pb-4">
+        <div className="bg-sky-200 flex flex-row justify-between">
+          <div className="my-auto"><h1 className="p-4">Arttu Kangas - Portfolio</h1></div>
+          <div className="my-auto p-4">
+            <ul>
+              <li>
+                <a href="https://github.com/ShootingStar91/">GitHub/ShootingStar91</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/arttu-kangas-a73961244/">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="flex flex-col gap-4 pt-2 flex-row sm:flex-row"><h2 className="font-bold my-auto">Projektit:</h2>
           <div className="flex flex-row gap-4">
             {pages.map(({ name, onClick }) => (
               <div key={name} className={`${buttonStyle} ${name === page ? 'bg-sky-800' : 'bg-amber-200'}`} onClick={onClick}>{name}</div>
